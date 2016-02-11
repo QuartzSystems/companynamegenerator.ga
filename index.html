@@ -51,7 +51,7 @@
                 </svg>
             </div>
             <h1 id="result"></h1>
-            <button class="btn btn-default" id="companyNameGenerator-mainButton">Reload</button>
+            <button class="btn btn-default" id="companyNameGenerator-mainButton">Reload</button> or press R.
         </div>
     </div>
     <div id="footer">
@@ -72,6 +72,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://cdn.rawgit.com/mrsharpoblunto/foswig.js/master/dist/foswig.js"></script>
 <script>
+    $.getScript("http://platform.twitter.com/widgets.js");
     $.getScript("js/net.js", function() {
         $.getScript("js/app.js");
     });
