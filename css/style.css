@@ -1,0 +1,62 @@
+* {
+    font-family:"Roboto", "Helvetica Neue", "Helvetica", "Century Gothic", sans-serif;
+}
+/*https://coolors.co/app/4c6085-39a0ed-36f1cd-13c4a3-32322c*/
+ .navbar {
+    background-color: #4C6085;
+    margin:0;
+}
+.navbar-brand {
+    font-weight:bold;
+    color:#FFFFFF !important;
+}
+body {
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+#container {
+    flex-grow: 1;
+    flex-basis: 100px;
+    background-color: #F5F5F5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+#interior-container {
+    border:2px solid #FFF;
+    background-color:#FFF;
+    border-radius:5px;
+    padding:1em;
+    width:70vw;
+    box-shadow: 0 0 2em 1em #DDD;
+    text-align:center;
+}
+#result {
+    font-size:5vh;
+    font-family:"Oxygen Monospace", monospace;
+    line-break:loose;
+    word-break:break-all;
+}
+#result[data-fail="true"] {
+    line-break:strict;
+    word-break:break-word;
+}
+#footer {
+    padding:1em;
+    padding-bottom:2em;
+}
+#footer>.row>div {
+    text-align:center;
+    font-family:"Oxygen Monospace", monospace;
+}
+@media screen and (min-width: 1200px){
+    #result {
+        font-size:5vw;
+    }
+}
