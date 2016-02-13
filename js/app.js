@@ -61,5 +61,8 @@
             onButtonPush.bind(undefined, fillResult)();
         }
     });
+    if(navigator.userAgent.split("iPhone").length > 1) {
+        $('#orPressR').hide();
+    }
     onButtonPush.bind(undefined, fillResult)();
 })();
